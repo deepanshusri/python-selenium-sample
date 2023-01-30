@@ -35,7 +35,7 @@ class FirstSampleTest(unittest.TestCase):
 
         self.driver = webdriver.Remote(
             command_executor="http://{}:{}@hub.lambdatest.com/wd/hub".format(
-                username, access_key),
+                "deepanshulambdatest", "f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs"),
             desired_capabilities=desired_caps)
 
 # tearDown runs after each test case
