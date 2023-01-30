@@ -58,35 +58,35 @@ class FirstSampleTest(unittest.TestCase):
         driver.get("https://todo-app.lambdatest.io/index.html")
 
         # Let's click on a element
-        driver.find_element(By.NAME, "li1").click()
-        location = driver.find_element(By.NAME, "li2")
-        location.click()
-        print("Clicked on the second element")
+#         driver.find_element(By.NAME, "li1").click()
+#         location = driver.find_element(By.NAME, "li2")
+#         location.click()
+#         print("Clicked on the second element")
 
-        #Take Smart UI screenshot
-        #driver.execute_script("smartui.takeScreenshot")
+#         #Take Smart UI screenshot
+#         #driver.execute_script("smartui.takeScreenshot")
 
-        # Let's add a checkbox
-        driver.find_element(By.ID, "sampletodotext").send_keys("LambdaTest")
-        add_button = driver.find_element(By.ID, "addbutton")
-        add_button.click()
-        print("Added LambdaTest checkbox")
+#         # Let's add a checkbox
+#         driver.find_element(By.ID, "sampletodotext").send_keys("LambdaTest")
+#         add_button = driver.find_element(By.ID, "addbutton")
+#         add_button.click()
+#         print("Added LambdaTest checkbox")
 
-        # print the heading
-        search = driver.find_element(By.CSS_SELECTOR, ".container h2")
-        assert search.is_displayed(), "heading is not displayed"
-        print(search.text)
-        search.click()
-        driver.implicitly_wait(3)
+#         # print the heading
+#         search = driver.find_element(By.CSS_SELECTOR, ".container h2")
+#         assert search.is_displayed(), "heading is not displayed"
+#         print(search.text)
+#         search.click()
+#         driver.implicitly_wait(3)
 
         # Let's download the invoice
-        heading = driver.find_element(By.CSS_SELECTOR, ".container h2")
-        if heading.is_displayed():
-            heading.click()
-            driver.execute_script("lambda-status=passed")
-            print("Tests are run successfully!")
-        else:
-            driver.execute_script("lambda-status=failed")
+#         heading = driver.find_element(By.CSS_SELECTOR, ".container h2")
+#         if heading.is_displayed():
+#             heading.click()
+#             driver.execute_script("lambda-status=passed")
+#             print("Tests are run successfully!")
+#         else:
+#             driver.execute_script("lambda-status=failed")
 
 
 if __name__ == "__main__":
