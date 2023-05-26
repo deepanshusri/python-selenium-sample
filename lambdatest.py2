@@ -4,8 +4,10 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-username = os.getenv("LT_USERNAME")  # Replace the username
-access_key = os.getenv("LT_ACCESS_KEY")  # Replace the access key
+
+
+username = "deepanshulambdatest"
+access_key = "f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs"
 
 
 class FirstSampleTest(unittest.TestCase):
